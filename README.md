@@ -4,25 +4,36 @@ As Source code we have two examples .
 
 Correct one, to run it use  `src/Lib.compileAndRunExample` 
 
-    "LOAD_VAL 1",
-    
-    "WRITE_VAR 'X'",
-    
-    "LOAD_VAL 2",
-    
-    "WRITE_VAR 'Y'",
-    
-    "READ_VAR 'X'",
-    
-    "LOAD_VAL 1",
-    
-    "ADD",
-    
-    "READ_VAR 'Y'",
-    
-    "MULTIPLY",
-    
-    "RETURN_VALUE"
+        "LOAD_VAL 1" 
+
+        "WRITE_VAR 'Y'"  
+
+        "LOAD_VAL 11"
+
+        "LOOP"   
+
+        "WRITE_VAR 'X'"  
+
+        "READ_VAR 'X'"   
+
+        "READ_VAR 'Y'"   
+
+        "MULTIPLY"   
+
+        "WRITE_VAR 'Y'"  
+
+        "READ_VAR 'X'"   
+
+        "LOAD_VAL -1"
+
+        "ADD"
+
+        "END_LOOP"   
+
+        "READ_VAR 'Y'"   
+
+        "RETURN_VALUE"
+
     
 
 Incorrect one, to run it use  `src/Lib.compileAndRunErrorExample`
